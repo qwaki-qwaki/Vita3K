@@ -2,45 +2,65 @@
 
 <lang>
 	<main_menubar>
-		<file name="Arquivo">
-			<open_pref_path>Abrir diretório das configurações</open_pref_path>
-			<install_firmware>Instalar firmware</install_firmware>
+		<file name="Arquivos">
+			<open_pref_path>Abrir Patch pré-definido</open_pref_path>
+			<open_patch_path>Abrir Caminho do Patch</open_patch_path>
+			<open_textures_path>Abrir Texturas</open_textures_path>
+			<install_firmware>Instalar Firmware</install_firmware>
 			<install_pkg>Instalar .pkg</install_pkg>
 			<install_zip>Instalar .zip, .vpk</install_zip>
-			<install_license>Instalar licença</install_license>
+			<install_license>Instalar a Licença</install_license>
 			<exit>Sair</exit>
 		</file>
-		<emulation name="Emulação">
+		<emulation name="Emulador">
 			<last_apps_used>Últimos apps usados</last_apps_used>
+			<empty>Vazio</empty>
 		</emulation>
-		<configuration name="Configuração">
-			<user_management>Gerenciamento de usuários</user_management>
+		<debug name="Depuração">
+			<threads>Threads</threads>
+			<semaphores>Semáforos</semaphores>
+			<mutexes>Mutexes</mutexes>
+			<lightweight_mutexes>Mutexes Leves</lightweight_mutexes>
+			<condition_variables>Variáveis de Condição</condition_variables>
+			<lightweight_condition_variables>Variáveis de Condição Leves</lightweight_condition_variables>
+			<event_flags>Flags de Evento</event_flags>
+			<memory_allocations>Alocações de Memória</memory_allocations>
+			<disassembly>Disassembly</disassembly>
+		</debug>
+		<configuration name="Configurações">
+			<user_management>Gerenciamento de Usuários</user_management>
 		</configuration>
 		<controls name="Controles">
-			<keyboard_controls>Controles do teclado</keyboard_controls>
+			<keyboard_controls>Controles do Teclado</keyboard_controls>
 		</controls>
 		<help name="Ajuda">
 			<welcome>Bem-vindo</welcome>
 		</help>
 	</main_menubar>
 
-	<about name="Sobre">
-		<vita3k>Vita3K: Um emulador de PS Vita/PS TV. O primeiro emulador funcional de PS Vita/PS TV do mundo.</vita3k>
+	<about name="Sobre nós">
+		<vita3k>Vita3K: É um emulador de PS Vita/PS TV. O primeiro emulador funcional de PS Vita/PS TV do mundo!</vita3k>
 		<about_vita3k>Vita3K é um emulador open-source experimental de PlayStation Vita/PlayStation TV escrito em C++ para Windows, Linux, macOS e Android.</about_vita3k>
 		<github_website>Se você está interessado em contribuir, visite nosso:</github_website>
-		<vita3k_website>Visite nosso website para mais informações:</vita3k_website>
+		<vita3k_website>Já se quer ter mais informações sobre, visite nosso website!:</vita3k_website>
+		<special_credit>Créditos especiais: a logo do Vita3K foi feita por:</special_credit>
+		<ko-fi_website>Se você quiser nos apoiar, visite nosso Ko-fi (um site para doações e financiamento coletivo):</ko-fi_website>
 		<vita3k_staff>Equipe Vita3K</vita3k_staff>
-		<developers>Desenvolvedores</developers>
-		<contributors>Contribuidores</contributors>
-		<supporters>Apoiantes</supporters>
+		<developers>Desenvolvedores:</developers>
+		<contributors>Contribuidores:</contributors>
+		<supporters>Apoiantes:</supporters>
 	</about>
 
 	<app_context>
 		<compat>
+			<check_app_state>Verificar estado do aplicativo</check_app_state>
+			<copy_vita3k_summary>Copiar sumário do Vita3K</copy_vita3k_summary>
+			<create_state_report>Criar relatório de estado</create_state_report>
+			<open_state_report>Abrir relatório de estado</open_state_report>
 			<update_database>Atualizar Database</update_database>
 		</compat>
-		<copy_app_info name="Copiar informação do aplicativo">
-			<name_and_id>Nome e ID do título</name_and_id>
+		<copy_app_info name="Copiar informação do app">
+			<name_and_id>Nome e ID</name_and_id>
 			<app_summary>Sumário de aplicativos</app_summary>
 		</copy_app_info>
 		<custom_config name="Configuração Personalizada">
@@ -50,6 +70,8 @@
 		</custom_config>
 		<path>
 			<open_folder>Abrir pasta</open_folder>
+			<patchs>Correção (Patch)</patchs>
+			<addcont>DLC (Download de Conteúdo Livre)</addcont>
 			<license>Licença</license>
 			<shader_cache>Cache de Shader</shader_cache>
 			<shader_log>Log de Shader</shader_log>
@@ -62,12 +84,19 @@
 			<delete_app>Esse aplicativo e todos os dados relacionados, inclusive dados salvos, serão excluídos.</delete_app>
 			<delete_app_description>Deletar um aplicativo pode demorar algum tempo
 dependendo de seu tamanho e hardware.</delete_app_description>
+			<delete_patch>Você quer excluir a correção (patch)? </delete_patch>
+			<delete_addcont>Você quer excluir o conteúdo adicional (DLC)?</delete_addcont>
+			<delete_license>Você quer excluir essa licença?</delete_license>
 		</delete>
-		<update_history>Histórico de atualizações</update_history>
+		<other name="Outros">
+			<reset_last_time_played>Redefinir a última vez que joguei</reset_last_time_played>
+			<reset_time_played>Redefinir o meu tempo jogado</reset_time_played>
+		</other>
+		<update_history>Atualizar histórico</update_history>
 		<history_version>Versão {}</history_version>
 		<info name="Informações">
-			<eligible>Qualificado</eligible>
-			<ineligible>Não qualificado</ineligible>
+			<eligible>Elegível</eligible>
+			<ineligible>Inelegível</ineligible>
 			<level>Nível {}</level>
 			<name>Nome</name>
 			<trophy_earning>Conquista de troféus</trophy_earning>
@@ -76,10 +105,20 @@ dependendo de seu tamanho e hardware.</delete_app_description>
 			<size>Tamanho</size>
 			<version>Versão</version>
 			<title_id>ID do título</title_id>
+			<category>Categoria</category>
+			<gd>Aplicações Digitais de Jogos</gd>
+			<gp>Correções de Jogos (patch)</gp>
 			<last_time_used>Usado pela última vez</last_time_used>
 			<time_used>Tempo usado</time_used>
 			<never>Nunca</never>
 		</info>
+		<time_used>
+			<time_used_seconds>{}segundos</time_used_seconds>
+			<time_used_minutes>{}minutos, {}segundos</time_used_minutes>
+			<time_used_hours>{}horas, {}minutos, {}segundos</time_used_hours>
+			<time_used_days>{}dias, {}horas, {}minutos, {}segundos</time_used_days>
+			<time_used_weeks>{}semanas, {}dias, {}horas, {}minutos, {}segundos</time_used_weeks>
+		</time_used>
 	</app_context>
 
 	<common>
@@ -87,41 +126,42 @@ dependendo de seu tamanho e hardware.</delete_app_description>
 Código de erro: {}</an_error_occurred>
 		<cancel>Cancelar</cancel>
 		<close>Fechar</close>
-		<could_not_load>Não foi possível carregar o arquivo.</could_not_load>
-		<could_not_save>Não foi possível salvar o arquivo.</could_not_save>
+		<could_not_load>Não foi possível carregar o arquivo. Perdão!</could_not_load>
+		<could_not_save>Não foi possível salvar o arquivo. Perdão!</could_not_save>
 		<delete>Excluir</delete>
 		<error>Erro</error>
-		<file_corrupted>O arquivo está corrompido.</file_corrupted>
-		<microphone_disabled>Ative o microfone.</microphone_disabled>
+		<file_corrupted>O arquivo está corrompido!</file_corrupted>
+		<microphone_disabled>Seu microfone está desativado!</microphone_disabled>
 		<no>Não</no>
-		<please_wait>Aguarde...</please_wait>
+		<ok>Okay</ok>
+		<please_wait>Só um segundo...</please_wait>
 		<search>Pesquisar</search>
 		<select_all>Selecionar tudo</select_all>
 		<select>Selecionar</select>
 		<submit>Enviar</submit>
 		<yes>Sim</yes>
 		<wday>
-			<day>domingo</day>
-			<day>segunda</day>
-			<day>terça</day>
-			<day>quarta</day>
-			<day>quinta</day>
-			<day>sexta</day>
-			<day>sábado</day>
+			<day>Domingo</day>
+			<day>Segunda</day>
+			<day>Terça</day>
+			<day>Quarta</day>
+			<day>Quinta</day>
+			<day>Sexta</day>
+			<day>Sábado</day>
 		</wday>
 		<ymonth>
-			<month>janeiro</month>
-			<month>fevereiro</month>
-			<month>março</month>
-			<month>abril</month>
-			<month>maio</month>
-			<month>junho</month>
-			<month>julho</month>
-			<month>agosto</month>
-			<month>setembro</month>
-			<month>outubro</month>
-			<month>novembro</month>
-			<month>dezembro</month>
+			<month>Janeiro</month>
+			<month>Fevereiro</month>
+			<month>Março</month>
+			<month>Abril</month>
+			<month>Maio</month>
+			<month>Junho</month>
+			<month>Julho</month>
+			<month>Agosto</month>
+			<month>Setembro</month>
+			<month>Outubro</month>
+			<month>Novembro</month>
+			<month>Dezembro</month>
 		</ymonth>
 		<small_ymonth>
 			<month>janeiro</month>
@@ -229,6 +269,21 @@ Código de erro: {}</an_error_occurred>
 		</states>
 	</compatibility>
 
+	<compat_db>
+		<get_failed>Ops.. ocorreu uma falha ao obter o banco de dados de compatibilidade atual!	Verifique sua conexão com a internet/firewall e tente novamente mais tarde.</get_failed>
+		<download_failed>Ops.. ocorreu uma falha ao baixar o banco de dados de compatibilidade dos aplicativos atualizado em: {}, pedimos que tente novamente mais tarde.</download_failed>
+		<load_failed>Ops.. ocorreu uma falha ao carregar o banco de dados de compatibilidade dos aplicativos atualizado e instalado em {} :( </load_failed>
+		<new_app_listed>O banco de dados de compatibilidade foi atualizado com sucesso de {} para {}. Parabéns! Há {} novos aplicativo(s) listados, totalizando {}!</new_app_listed>
+		<app_listed>O banco de dados de compatibilidade foi atualizado com sucesso de {} para {}. Tem exatamente {} aplicativo(s) listado(s)!</app_listed>
+	</compat_db>
+
+	<compile_shaders>
+		<compiling_shaders>Compilando shaders...</compiling_shaders>
+		<pipelines_compiled>{} linhas de produção (pipelines) compiladas!</pipelines_compiled>
+		<shaders_compiled>{} shaders compilados!</shaders_compiled>
+	</compile_shaders>
+
+
 	<content_manager name="Gerenciador de conteúdo">
 		<application name="Aplicativos">
 			<delete>Os aplicativos selecionados e todos os dados relacionados, inclusive dados salvos, serão excluídos.</delete>
@@ -243,21 +298,78 @@ Código de erro: {}</an_error_occurred>
 		<clear_all>Limpar tudo</clear_all>
 	</content_manager>
 
-	<controllers name="Controle">
+	<controllers name="Controles">
 		<connected>{} controles conectados</connected>
 		<num>Núm</num>
+		<motion_support>Suporte a movimento</motion_support>
+		<rebind_constrols>Reatribuir controles</rebind_constrols>
+		<led_color>Cor do LED</led_color>
+		<use_custom_color>Usar cor personalizada</use_custom_color>
+		<use_custom_color_description>Marque essa caixinha para usar a cor personalizada do LED para esse controle.</use_custom_color_description>
+		<red>Vermelho</red>
+		<green>Verde</green>
+		<blue>Azul</blue>
 		<not_connected>Nenhum controle compatível conectado.
 Conecte um controle que seja compatível com SDL3.</not_connected>
+		<disable_motion>Desativar suporte a movimento</disable_motion>
+		<motion_sensors>Usando sensores de movimento</motion_sensors>
+		<reset_controller_binding>Redefinir mapeamento de controle</reset_controller_binding>
 	</controllers>
+
+<controls>
+		<button>Botão</button>
+		<mapped_button>Botão mapeado</mapped_button>
+		<left_stick_up>Analógico esquerdo para cima</left_stick_up>
+		<left_stick_down>Analógico esquerdo para baixo</left_stick_down>
+		<left_stick_right>Analógico esquerdo para a direita</left_stick_right>
+		<left_stick_left>Analógico esquerdo para a esquerda</left_stick_left>
+		<right_stick_up>Analógico direito para cima</right_stick_up>
+		<right_stick_down>Analógico direito para baixo</right_stick_down>
+		<right_stick_right>Analógico direito para a direita</right_stick_right>
+		<right_stick_left>Analógico direito para a esquerda</right_stick_left>
+		<d_pad_up>D-pad para cima</d_pad_up>
+		<d_pad_down>D-pad para baixo</d_pad_down>
+		<d_pad_right>D-pad para a direita</d_pad_right>
+		<d_pad_left>D-pad para a esquerda</d_pad_left>
+		<square_button>Botão quadrado</square_button>
+		<cross_button>Botão X</cross_button>
+		<circle_button>Botão bolinha</circle_button>
+		<triangle_button>Botão triângulo</triangle_button>
+		<start_button>Botão start</start_button>
+		<select_button>Botão select</select_button>
+		<ps_button>Botão PS</ps_button>
+		<l1_button>Botão L1</l1_button>
+		<r1_button>Botão R1</r1_button>
+		<ps_tv_mode>Somente no modo de PS TV</ps_tv_mode>
+		<l2_button>Botão L2</l2_button>
+		<r2_button>Botão R2</r2_button>
+		<l3_button>Botão L3</l3_button>
+		<r3_button>Botão R3</r3_button>
+		<gui>GUI</gui>
+		<full_screen>Tela Cheia</full_screen>
+		<toggle_touch>Alternar Toque</toggle_touch>
+		<toggle_touch_description>Alterna entre o toque na tela e o toque traseiro.</toggle_touch_description>
+		<toggle_gui_visibility>Alternar Visibilidade da GUI</toggle_gui_visibility>
+		<toggle_gui_visibility_description>Alterna entre exibir/esconder a GUI enquanto o app está rodando.</toggle_gui_visibility_description>
+		<miscellaneous>Diversos</miscellaneous>
+		<toggle_texture_replacement>Alternar Substituição de Textura</toggle_texture_replacement>
+		<take_screenshot>Tirar captura de tela</take_screenshot>
+		<pinch_modifier>Modificador de pinça</pinch_modifier>
+		<alternate_pinch_in>Alternar pinça para dentro</alternate_pinch_in>
+		<alternate_pinch_out>Alternar pinça para fora</alternate_pinch_out>
+		<error_duplicate_key>Ops.. ocorreu um erro, a tecla está sendo usada para outras associações ou é reservada! Escolha outra tecla.</error_duplicate_key>
+		<reset_controls_binding>Redefinir Controle</reset_controls_binding>
+	</controls>
 
 	<dialog>
 		<trophy>
 			<preparing_start_app>Preparando para iniciar o aplicativo...</preparing_start_app>
 		</trophy>
+
 		<save_data>
 			<delete>
 				<cancel_deleting>Deseja cancelar a exclusão?</cancel_deleting>
-				<deletion_complete>Exclusão concluída.</deletion_complete>
+				<deletion_complete>Exclusão concluída!</deletion_complete>
 				<delete_saved_data>Deseja excluir esses dados salvos?</delete_saved_data>
 			</delete>
 			<info>
@@ -266,6 +378,7 @@ Conecte um controle que seja compatível com SDL3.</not_connected>
 			</info>
 			<load name="Carregar">
 				<cancel_loading>Deseja cancelar o carregamento?</cancel_loading>
+				<could_not_load>Não foi possível carregar o arquivo. Perdão!</could_not_load>
 				<no_saved_data>Não há dados salvos.</no_saved_data>
 				<load_complete>Carregamento concluído.</load_complete>
 				<loading>Carregando...</loading>
@@ -273,14 +386,14 @@ Conecte um controle que seja compatível com SDL3.</not_connected>
 			</load>
 			<save name="Salvar">
 				<cancel_saving>Deseja cancelar o salvamento?</cancel_saving>
-				<could_not_save>Não foi possível salvar o arquivo.
-Não há espaço livre suficiente no cartão de memória. Para salvar o seu progresso no aplicativo, crie pelo menos {} de espaço livre.
+				<could_not_save>Não foi possível salvar o arquivo!
+Não há espaço livre suficiente no cartão de memória. Para salvar o seu progresso, crie pelo menos {} de espaço livre.
 
-Para criar espaço livre, pressione o botão PS para pausar esse aplicativo e exclua outros aplicativos ou conteúdo.</could_not_save>
+Para criar espaço livre, pressione o botão PS para pausar esse aplicativo e exclua outros aplicativos ou conteúdo. Boa sorte!</could_not_save>
 				<not_free_space>Não há espaço livre suficiente no cartão de memória.
 Para continuar usando o aplicativo, crie pelo menos {} de espaço livre.
 
-Pressione o botão PS para pausar o aplicativo e exclua outros aplicativos ou conteúdo.</not_free_space>
+Pressione o botão PS para pausar o aplicativo e exclua outros aplicativos ou conteúdo para criar espaço livre.</not_free_space>
 				<new_saved_data>Novos dados salvos</new_saved_data>
 				<saving_complete>Gravação concluída.</saving_complete>
 				<save_the_data>Deseja salvar os dados?</save_the_data>
@@ -297,38 +410,121 @@ Não desligue o sistema nem feche o aplicativo.</warning_saving>
 		<data_delete>Dados a serem excluídos:</data_delete>
 	</game_data>
 
+	<home_screen>
+		<filter>Filtro</filter>
+		<sort_app>Ordenar Aplicativos Por</sort_app>
+		<all>Todos</all>
+		<by_region>Por Região</by_region>
+		<usa>EUA</usa>
+		<europe>Europa</europe>
+		<japan>Japão</japan>
+		<asia>Ásia</asia>
+		<by_type>Por tipo</by_type>
+		<commercial>Comercial</commercial>
+		<homebrew>Homebrew</homebrew>
+		<by_compatibility_state>Por Estado de Compatibilidade</by_compatibility_state>
+		<ver>Ver</ver>
+		<cat>Gato</cat>
+		<comp>Compatível</comp>
+		<last_time>Última vez</last_time>
+		<refresh>Atualizar</refresh>
+	</home_screen>
+
 	<indicator>
-		<app_added_home>O aplicativo foi adicionado à tela principal.</app_added_home>
+		<app_added_home>O aplicativo foi adicionado à tela principal</app_added_home>
 		<delete_all>Excluir tudo</delete_all>
-		<notif_deleted>As notificações serão excluídas.</notif_deleted>
-		<install_failed>Não foi possível instalar.</install_failed>
-		<install_complete>Instalação concluída.</install_complete>
+		<notif_deleted>As notificações serão excluídas</notif_deleted>
+		<install_failed>Não foi possível instalar. Pedimos desculpas pela inconveniência!</install_failed>
+		<install_complete>Instalação completa.</install_complete>
 		<installing>Instalando...</installing>
-		<no_notif>Não há notificações.</no_notif>
-		<trophy_earned>Você conquistou um troféu!</trophy_earned>
+		<no_notif>Você não recebeu notificações</no_notif>
+		<trophy_earned>Parabéns! Você conquistou um troféu!</trophy_earned>
 	</indicator>
 
 	<initial_setup>
 		<back>Voltar</back>
-		<completed_setup>Você concluiu a configuração inicial.
-O seu sistema Vita3K está pronto!</completed_setup>
+		<completed_setup>Você completou a configuração inicial.
+Seu sistema Vita3K está pronto, aproveite!</completed_setup>
 		<select_language>Selecione um idioma.</select_language>
-		<storage_file_permissions>Vita3K requer acesso completo aos arquivos.
-Toque em 'Conceder Acesso' para continuar.</storage_file_permissions>
+		<select_pref_path>Selecione um caminho de preferência.</select_pref_path>
+		<storage_file_permissions>O Vita3K precisa de acesso total ao armazenamento.
+Pressione 'Conceder Acesso' para continuar!</storage_file_permissions>
 		<grant_access>Conceder Acesso</grant_access>
-		<install_firmware>Instalar firmware.</install_firmware>
+		<current_emu_path>Caminho Atual do Emulador</current_emu_path>
+		<change_emu_path>Mudar Caminho do Emulador</change_emu_path>
+		<reset_emu_path>Resetar Caminho do Emulador</reset_emu_path>
+		<install_firmware>Instalar Firmware.</install_firmware>
+		<install_highly_recommended>Instalar todos os arquivos de firmware é altamente recomendado!:)</install_highly_recommended>
 		<installed>Instalado:</installed>
-		<download_font_package>Baixar Pacote de Fonte</download_font_package>
-		<install_firmware_file>Instalar Arquivo de Firmware</install_firmware_file>
-		<completed>Completo.</completed>
+		<download_font_package>Instale o pacote de fontes</download_font_package>
+		<install_firmware_file>Instale o arquivo de Firmware</install_firmware_file>
+		<select_interface_settings>Selecione as configurações da interface.</select_interface_settings>
+		<show_info_bar>Mostrar Barra de Informações</show_info_bar>
+		<info_bar_description>Marque a caixa para mostrar a barra de informações
+(A barra de informações é o relógio, nível da bateria e centro de notificações).</info_bar_description>
+		<show_live_area_screen>Tela da Live Area</show_live_area_screen>
+		<live_area_screen_description>Marque a caixa para abrir a Live Area por padrão ao clicar em qualquer aplicativo.
+Se desativado, clique com o botão direito em um aplicativo para abri-lo.</live_area_screen_description>
+		<apps_list_grid>Modo Grade</apps_list_grid>
+		<apps_list_grid_description>Marque a caixa para definir a lista de aplicativos no modo grade, como no PS Vita</apps_list_grid_description>
+		<icon_size>Tamanho do ícone</icon_size>
+		<select_icon_size>Selecione o tamanho do ícone.</select_icon_size>
+		<completed>Completado.</completed>
 		<next>Próximo</next>
 	</initial_setup>
+
+	<install_dialog>
+		<firmware_install>
+			<firmware_installation>Instalação de Firmware</firmware_installation>
+			<firmware_installing>Instalando firmware, por favor aguarde...</firmware_installing>
+			<successed_install_firmware>Firmware instalado com sucesso!</successed_install_firmware>
+			<firmware_version>Versão do Firmware:</firmware_version>
+			<no_font_exist>Nenhum arquivo de fonte existente, por favor instale um.</no_font_exist>
+			<firmware_font_package_description>O pacote de fontes de firmware é necessário para algumas aplicações
+			e suporte para fontes de regiões asiáticas.(Altamente recomendado)</firmware_font_package_description>
+			<delete_firmware>Deletar o arquivo de instalação de firmware?</delete_firmware>
+		</firmware_install>
+		<pkg_install>
+			<select_license_type>Selecione o tipo de licença</select_license_type>
+			<select_bin_rif>Selecione o work.bin/rif</select_bin_rif>
+			<enter_zrif>Adicione zRIF</enter_zrif>
+			<enter_zrif_key>Adicione a chave zRIF</enter_zrif_key>
+			<input_zrif>Por favor, insira seu zRIF aqui</input_zrif>
+			<copy_paste_zrif>Ctrl + C para copiar, Ctrl + V para colar.</copy_paste_zrif>
+			<delete_pkg>Deletar o arquivo pkg?</delete_pkg>
+			<delete_bin_rif>Deletar o arquivo work.bin/rif?</delete_bin_rif>
+			<failed_install_package>Ops... ocorreu uma falha ao instalar o package.
+Confira o arquivo pkg e o work.bin/rif ou a chave zRIF.</failed_install_package>
+		</pkg_install>
+		<archive_install>
+			<select_install_type>Selecione o tipo de instalação</select_install_type>
+			<select_file>Selecione o arquivo</select_file>
+			<select_directory>Selecione o diretório</select_directory>
+			<compatible_content>{} arquivos encontrados com conteúdos compatíveis.</compatible_content>
+			<successed_install_archive>{} arquivos instalados com sucesso:</successed_install_archive>
+			<update_app>Atualizar App para:</update_app>
+			<failed_install_archive>Falha ao instalar {} arquivos:</failed_install_archive>
+			<not_compatible_content>Nenhum conteúdo compatível encontrado em {} arquivos:</not_compatible_content>
+			<delete_archive>Deletar o arquivo?</delete_archive>
+		</archive_install>
+		<license_install>
+			<successed_install_license>Licença instalada com sucesso.</successed_install_license>
+			<failed_install_license>Falha ao instalar licença.
+Verifique o arquivo work.bin/rif ou a chave zRIF.</failed_install_license>
+		</license_install>
+		<reinstall>
+			<reinstall_content>Reinstalar este conteúdo?</reinstall_content>
+			<already_installed>Este conteúdo já está instalado.</already_installed>
+			<reinstall_overwrite>Você quer reinstalar e substituir os dados existentes?</reinstall_overwrite>
+		</reinstall>
+	</install_dialog>
 
 	<live_area>
 		<start>Iniciar</start>
 		<continue>Continuar</continue>
 		<help>
-			<firmware_not_detected>Firmware não detectado. A instalação é altamente recomendada</firmware_not_detected>
+			<control_setting>Usando configuração para teclado na configuração de controle</control_setting>
+			<firmware_not_detected>Firmware não detectado. A instalação é altamente recomendada!</firmware_not_detected>
 			<firmware_font_not_detected>Pacote de fonte não detectado. Sua instalação é recomendada para o texto da fonte na tela inicial</firmware_font_not_detected>
 			<live_area_help>Ajuda da Live Area</live_area_help>
 			<browse_app>Navegar na lista de aplicativos</browse_app>
@@ -337,13 +533,42 @@ Toque em 'Conceder Acesso' para continuar.</storage_file_permissions>
 durante o uso do aplicativo</show_hide>
 			<show_hide_control>Pressione PS</show_hide_control>
 			<exit_livearea>Sair da Live Area</exit_livearea>
-			<exit_livearea_control>Clique no Esc ou pressione Circulo</exit_livearea_control>
+			<exit_livearea_control>Clique no Esc ou pressione a Bolinha</exit_livearea_control>
+			<manual_help>Ajuda do Manual</manual_help>
 			<browse_page>Navegar página</browse_page>
+			<browse_page_control>D-pad, Analógico Esquerdo, Roda para cima/baixo ou usando o deslizador, clique em &lt;/&gt;</browse_page_control>
 			<hide_show>Esconder/Mostrar botão</hide_show>
 			<hide_show_control>Clique Direito ou Pressione Triângulo</hide_show_control>
+			<exit_manual>Fechar manual</exit_manual>
 			<exit_manual_control>Clique no Esc ou Pressione PS</exit_manual_control>
 		</help>
 	</live_area>
+
+<message>
+		<load_app_failed>Ops... ocorreu uma falha ao carregar "{}".
+Confira vita3k.log para ver o output do console e receber detalhes.
+1. Você instalou o firmware?
+2. Re-extraia seu próprio app/jogo da PS Vita e instale-o no Vita3K.
+3. Se você quiser instalar ou inicializar o Vitamin, saiba que isso não é suportado.</load_app_failed>
+	</message>
+
+	<overlay name="Overlay">
+		<gamepad_overlay>Sobreposição de Gamepad</gamepad_overlay>
+		<enable_gamepad_overlay>Mostrar Sobreposição de Gamepad</enable_gamepad_overlay>
+		<hide_gamepad_overlay>Esconder Sobreposição de Gamepad</hide_gamepad_overlay>
+		<modify_gamepad_overlay>Modificar Sobreposição de Gamepad</modify_gamepad_overlay>
+		<overlay_scale>Escala da Sobreposição</overlay_scale>
+		<overlay_opacity>Opacidade da Sobreposição</overlay_opacity>
+		<reset_gamepad>Resetar Gamepad</reset_gamepad>
+		<overlay_show_touch_switch>Mostrar botão de troca de tela touchscreen frontal/traseira</overlay_show_touch_switch>
+		<l2_r2_triggers>Os gatilhos L2/R2 serão exibidos apenas se o modo PSTV estiver ativado</l2_r2_triggers>
+	</overlay>
+
+	<performance_overlay>
+		<avg>Avg</avg>
+		<min>Min</min>
+		<max>Máx</max>
+	</performance_overlay>
 
 	<settings name="Configurações">
 		<theme_background name="Tema e fundo">
@@ -428,13 +653,13 @@ fundo</add_background>
 	</sys_apps_title>
 
 	<trophy_collection>
-		<delete_trophy>Deletar troféu</delete_trophy>
-		<trophy_deleted>A informação deste troféu salva neste usuário irá ser deletada.</trophy_deleted>
+		<delete_trophy>Deletar troféu?</delete_trophy>
+		<trophy_deleted>A informação deste troféu salva neste usuário foi deletada.</trophy_deleted>
 		<details>Detalhes</details>
 		<earned>Conquistado</earned>
 		<name>Nome</name>
 		<no_trophies>Não há nenhum troféu.
-Você pode conquistar troféus usando um aplicativo compatível com o recurso de troféus.</no_trophies>
+Você pode conquistar troféus usando um aplicativo compatível com o recurso de troféus!</no_trophies>
 		<not_earned>Não conquistado</not_earned>
 		<original>Original</original>
 		<sort>Classificar</sort>
@@ -449,7 +674,7 @@ Você pode conquistar troféus usando um aplicativo compatível com o recurso de
 		<create_user>Criar usuário</create_user>
 		<user_created>O usuários a seguir foi criado:</user_created>
 		<edit_user>Editar usuário</edit_user>
-		<user_name_used>O nome já está sendo usado.</user_name_used>
+		<user_name_used>O nome já está sendo usado, tente outro.</user_name_used>
 		<delete_user>Excluir usuário</delete_user>
 		<user_delete>Selecione o usuário que você deseja excluir.</user_delete>
 		<user_delete_msg>O usuário a seguir será excluído:</user_delete_msg>
@@ -459,31 +684,47 @@ Tem certeza de que deseja continuar?</user_delete_warn>
 		<user_deleted>Usuário excluído.</user_deleted>
 		<choose_avatar>Escolher avatar</choose_avatar>
 		<reset_avatar>Resetar avatar</reset_avatar>
-		<user>Usuario</user>
+		<user>Usuário</user>
 		<confirm>Confirmar</confirm>
 		<automatic_user_login>Login Automático de Usuário</automatic_user_login>
 	</user_management>
 
 	<vita3k_update name="Atualização Vita3K">
- 		<new_version_available>Uma nova versão Vita3K está disponível.</new_version_available>
+ 		<new_version_available>Uma nova versão Vita3K está disponível. Recomendamos estar sempre atualizado!</new_version_available>
 		<back>Voltar</back>
  		<cancel_update_resume>Deseja cancelar a atualização?
-Se cancelar a operação, na próxima atualização, o Vita3K iniciará o download desse ponto.</cancel_update_resume>
+Se cancelar, na próxima atualização, o Vita3K iniciará o download desse ponto.</cancel_update_resume>
 		<downloading>Fazendo download...
 Quando o download terminar, Vita3K será reiniciado automaticamente e o novo atualização será instalado.</downloading>
-		<not_complete_update>Não foi possível concluir a atualização.</not_complete_update>
+		<not_complete_update>Não foi possível concluir a atualização. Pedimos desculpas pela inconveniência!</not_complete_update>
 		<minutes_left>Faltam {} minutos</minutes_left>
 		<next>Próximo</next>
 		<seconds_left>Faltam {} segundos</seconds_left>
 		<update_vita3k>Deseja atualizar o Vita3K?</update_vita3k>
-		<later_version_already_installed>A versão posterior Vita3K já está instalada.</later_version_already_installed>
-		<latest_version_already_installed>A versão mais recente Vita3K já está instalada.</latest_version_already_installed>
+		<later_version_already_installed>A versão posterior Vita3K já está instalada!</later_version_already_installed>
+		<latest_version_already_installed>A versão mais recente Vita3K já está instalada!</latest_version_already_installed>
 		<new_features>Novos recursos da versão {}</new_features>
 		<update>Atualizar</update>
 		<version>Versão {}</version>
 	</vita3k_update>
 
-	<welcome name="Welcome to Vita3K">
-		<download_firmware>Baixar Firmware</download_firmware>
+	<welcome name="Bem vindo(a) ao Vita3K!! *-*">
+		<vita3k>Vita3K, emulador de PlayStation Vita</vita3k>
+		<about_vita3k>O Vita3K é um emulador de código aberto da PlayStation Vita escrito em C++ para Windows, Linux, macOS e Android.</about_vita3k>
+		<development_stage>O emulador ainda está em suas fases de desenvolvimento, então qualquer feedback e testes são amplamente apreciados!</development_stage>
+		<about_firmware>Para começar, por favor instale todos os arquivos de firmware da PS Vita.</about_firmware>
+		<download_preinst_firmware>Pré-instalar o Firmware</download_preinst_firmware>
+		<download_firmware>Instalar o Firmware todo</download_firmware>
+		<download_firmware_font_package>Instalar pacote de fontes do Firmware</download_firmware_font_package>
+		<vita3k_quickstart>Atenção! Uma guia completa sobre como configurar o Vita3K pode ser encontrada na</vita3k_quickstart>
+		<quickstart>Guia de Início Rápido</quickstart>
+		<page>(página).</page>
+		<check_compatibility>Dê uma olhada na lista de jogos comerciais e de programas feitos por fãs para ver o que realmente funciona hoje em dia</check_compatibility>
+		<commercial_compatibility_list>Lista de Compatibilidade de jogos comerciais</commercial_compatibility_list>
+		<homebrew_compatibility_list>Lista de Compatibilidade de jogos feitos por fãs</homebrew_compatibility_list>
+		<welcome_contribution>Contribuições são sempre bem-vindas!</welcome_contribution>
+		<discord_help>Suporte adicional pode ser encontrado no canal #help do</discord_help>
+		<no_piracy>O Vita3K não tolera pirataria. Você deve extrair os jogos de seu próprio console original.</no_piracy>
+		<show_next_time>Mostrar na próxima vez?</show_next_time>
 	</welcome>
 </lang>
