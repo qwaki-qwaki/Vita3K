@@ -554,12 +554,6 @@ ou Roda para cima/baixo, clique em &lt;/&gt;</browse_page_control>
 		<l2_r2_triggers>Mostrar gatilhos L2/R2 somente se o modo PS TV estiver ativado</l2_r2_triggers>
 	</overlay>
 
-	<performance_overlay>
-		<avg>Avg</avg>
-		<min>Min</min>
-		<max>Máx</max>
-	</performance_overlay>
-
 	<settings name="Configurações">
 		<sound_display name="Áudio e vídeo">
 			<system_music>Musica do sistema</system_music>
