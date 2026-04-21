@@ -135,27 +135,27 @@ Código de erro: {}</an_error_occurred>
 		<submit>Enviar</submit>
 		<yes>Sim</yes>
 		<wday>
-			<day>Domingo</day>
-			<day>Segunda</day>
-			<day>Terça</day>
-			<day>Quarta</day>
-			<day>Quinta</day>
-			<day>Sexta</day>
-			<day>Sábado</day>
+			<day>domingo</day>
+			<day>segunda</day>
+			<day>terça</day>
+			<day>quarta</day>
+			<day>quinta</day>
+			<day>sexta</day>
+			<day>sábado</day>
 		</wday>
 		<ymonth>
-			<month>Janeiro</month>
-			<month>Fevereiro</month>
-			<month>Março</month>
-			<month>Abril</month>
-			<month>Maio</month>
-			<month>Junho</month>
-			<month>Julho</month>
-			<month>Agosto</month>
-			<month>Setembro</month>
-			<month>Outubro</month>
-			<month>Novembro</month>
-			<month>Dezembro</month>
+			<month>de janeiro</month>
+			<month>de fevereiro</month>
+			<month>de março</month>
+			<month>de abril</month>
+			<month>de maio</month>
+			<month>de junho</month>
+			<month>de julho</month>
+			<month>de agosto</month>
+			<month>de setembro</month>
+			<month>de outubro</month>
+			<month>de novembro</month>
+			<month>de dezembro</month>
 		</ymonth>
 		<small_ymonth>
 			<month>janeiro</month>
@@ -403,7 +403,7 @@ Não desligue o sistema nem feche o aplicativo.</warning_saving>
 
 	<home_screen>
 		<filter>Filtro</filter>
-		<sort_app>Odernar aplicativos</sort_app>
+		<sort_app>Ordenar aplicativos</sort_app>
 		<all>Todos</all>
 		<by_region>Por região</by_region>
 		<usa>EUA</usa>
@@ -554,9 +554,14 @@ ou Roda para cima/baixo, clique em &lt;/&gt;</browse_page_control>
 		<l2_r2_triggers>Mostrar gatilhos L2/R2 somente se o modo PS TV estiver ativado</l2_r2_triggers>
 	</overlay>
 
+	<performance_overlay>
+		<avg>Méd</avg>
+		<max>Máx</max>
+	</performance_overlay>
+
 	<settings name="Configurações">
-		<sound_display name="Áudio e vídeo">
-			<system_music>Musica do sistema</system_music>
+		<sound_display name="Som e Imagem">
+			<system_music>Música do sistema</system_music>
 		</sound_display>
 		<theme_background name="Tema e fundo">
 			<default>Padrão</default>
